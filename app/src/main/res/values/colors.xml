@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="c9">#777777</color>
+
+    <color name="colorAccent">#0accac</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="colorTransparentBlack">#44777777</color>
+
+    <color name="line_btn">#BBBBBB</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+
+    <color name="colorRed">#FF3333</color>
+
+    <color name="colorGray4">#787878</color>
+
+
+    <!--蒙版-->
+
+    <!-- 40%不透明度 -->
+
+
+    <!--?xml version="1.0" encoding="UTF-8"?-->
+
+    <!-- 裁剪范围颜色 -->
+
+    <!--special color-->
+    <!--MainActivity item被选中的颜色-->
+    <color name="main_item_selected_color">#555555</color>
+    <color name="main_item_unselected_color">#2A2A2A</color>
+    <color name="main_item_divide_color">#0d0d0d</color>
+
+    <color name="hlfTransparent">#30000000</color>
+
+    <color name="colorPrimaryDark">#21a3f5</color>
+
+    <color name="background_gray1">#EBEBEB</color>
+    <color name="colorTextWhite">#FFFFFF</color>
+
+</resources>
