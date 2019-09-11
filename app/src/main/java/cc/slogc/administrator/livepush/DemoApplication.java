@@ -15,11 +15,11 @@ import java.lang.reflect.Method;
 
 public class DemoApplication extends MultiDexApplication {
 
-//    private RefWatcher mRefWatcher;
+    //    private RefWatcher mRefWatcher;
     private static DemoApplication instance;
 
     // 如何获取License? 请参考官网指引 https://cloud.tencent.com/document/product/454/34750
-    String licenceUrl ="http://license.vod2.myqcloud.com/license/v1/eb7627739eda8227f18cdac2171d7c77/TXLiveSDK.licence";
+    String licenceUrl = "http://license.vod2.myqcloud.com/license/v1/eb7627739eda8227f18cdac2171d7c77/TXLiveSDK.licence";
     String licenseKey = "ff89b9fc36d687c0c0f51dd84e6fec69";
 
     @Override
@@ -32,7 +32,7 @@ public class DemoApplication extends MultiDexApplication {
         TXLiveBase.setConsoleEnabled(true);
         CrashReport.UserStrategy strategy = new CrashReport.UserStrategy(getApplicationContext());
         strategy.setAppVersion(TXLiveBase.getSDKVersionStr());
-        CrashReport.initCrashReport(getApplicationContext(),strategy);
+        CrashReport.initCrashReport(getApplicationContext(), strategy);
 
         TXLiveBase.getInstance().setLicence(instance, licenceUrl, licenseKey);
 
@@ -40,12 +40,11 @@ public class DemoApplication extends MultiDexApplication {
     }
 
 
-
     public static DemoApplication getApplication() {
         return instance;
     }
 
-    private void closeAndroidPDialog(){
+    private void closeAndroidPDialog() {
         try {
             Class aClass = Class.forName("android.content.pm.PackageParser$Package");
             Constructor declaredConstructor = aClass.getDeclaredConstructor(String.class);

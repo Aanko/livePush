@@ -404,14 +404,6 @@ public class CameraPusherActivity extends Activity implements ITXLivePushListene
             }
         });
 
-        findViewById(R.id.pusher_ib_link).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("https://cloud.tencent.com/document/product/454/7885"));
-                startActivity(intent);
-            }
-        });
     }
 
     /**
